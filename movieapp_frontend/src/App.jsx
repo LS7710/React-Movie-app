@@ -2,8 +2,17 @@ import './App.css'
 
 function App() {
   return (
+    <>
+    <Text/>
+    <Text/>
+    </>
+  )
+}
+
+function Text() {
+  return(
     <div>
-      <p>Hello World</p>
+      <p>Hello world</p>
     </div>
   )
 }
