@@ -1,3 +1,3 @@
-# React App
+# React Movie App
 
-A simple movie app made in react, in order to not only practice already known react knowledge but also delve into some more technical and complex areas of the framework
+An movie streaming app built in react
