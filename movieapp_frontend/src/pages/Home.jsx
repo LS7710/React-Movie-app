@@ -10,10 +10,11 @@ function Home() {
     { id: 3, title: "Transformers", release_date: "2008" },
   ];
 
-  const handleSearch = () => {
+  const handleSearch = (e) => {
     e.preventDefault()
     alert(searchQuery)
-    
+    setSearchQuery("-----")
+
   };
 
   return (
@@ -24,14 +25,16 @@ function Home() {
           placeholder="Search for movies..."
           className="search-input"
           value={searchQuery}
-          onChange={e => setSearchQuery(e.target.value)}
+          onChange={(e) => setSearchQuery(e.target.value)}
         />
         <button type="submit" className="search-button">Search</button>
       </form>
         
       <div className="movies-grid">
         {movies.map((movie) => (
+          (
           <MovieCard movie={movie} key={movie.id} />
+          )
         ))}
       </div>
     </div>
